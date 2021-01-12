@@ -27,6 +27,7 @@
             }
         },
         "apiManagementEmail": {
+            "defaultValue": "admin@contoso.com",
             "type": "string",
             "metadata": {
                 "description": "Enter the email address to use for API Management admin notifications."
