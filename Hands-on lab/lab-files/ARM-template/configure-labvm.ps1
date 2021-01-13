@@ -14,6 +14,8 @@ Disable-InternetExplorerESC
 Invoke-WebRequest 'https://github.com/microsoft/MCW-App-modernization/archive/master.zip' -OutFile 'C:\MCW.zip'
 Expand-Archive -LiteralPath 'C:\MCW.zip' -DestinationPath 'C:\MCW' -Force
 
+# TODO: Fix Razor support!
+
 # Download and install .NET Core 2.2
 Invoke-WebRequest 'https://download.visualstudio.microsoft.com/download/pr/279de74e-f7e3-426b-94d8-7f31d32a129c/e83e8c4c49bcb720def67a5c8fe0d8df/dotnet-sdk-2.2.207-win-x64.exe' -OutFile 'C:\dotnet-sdk-2.2.207-win-x64.exe'
 $pathArgs = {C:\dotnet-sdk-2.2.207-win-x64.exe /Install /Quiet /Norestart /Logs log.txt}
